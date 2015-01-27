@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/AlarmScreenRelativeLayout"
+    android:background="@drawable/sunset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/alarm_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Alarm!"
+        android:textSize="38dp" />
+
+    <TextView
+        android:id="@+id/alarm_screen_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alarm_screen_button"
+        android:layout_below="@+id/alarm_screen_title"
+        android:layout_marginTop="28dp"
+        android:text="00 : 00"
+        android:textSize="52dp" />
+
+    <TextView
+        android:id="@+id/alarm_screen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_screen_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+       
+        android:text="Alarm name" />
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alarm_screen_button"
+        android:layout_alignRight="@+id/alarm_screen_time"
+        android:layout_centerVertical="true"
+        android:textSize="38dp"   />
+
+    <Button
+        android:id="@+id/alarm_screen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:enabled="true"
+        android:text="Dismiss"
+        android:textSize="38dp" />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textQuestion"
+         android:minHeight="20dp"
+        android:minWidth="40dp" 
+        android:textSize="20dp" 
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/C"
+        android:layout_alignBottom="@+id/C"
+         android:minHeight="20dp"
+        android:minWidth="40dp" 
+        android:textSize="20dp" 
+        android:layout_toRightOf="@+id/alarm_screen_button" />
+
+    <Button
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/C"
+        android:layout_toLeftOf="@+id/textQuestion"
+        android:minHeight="20dp"
+        android:textSize="20dp" 
+        android:minWidth="40dp" />
+
+</RelativeLayout>
